@@ -27,8 +27,8 @@ outputs:
       run:
         - python >=3.7,<4
         - rich >12.6
-        - markdown-it-py >=2.1.0,<3
-        - typing-extensions >=4,<5
+        - markdown-it-py >=2.1.0,<2.2
+        - typing-extensions >=4.4,<4.5
         - importlib-metadata >=4.11.3,<4.12
     test:
       imports:
