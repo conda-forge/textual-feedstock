@@ -10,7 +10,7 @@ source:
   sha256: b86d4668a072fc85092f081e157e1e7575b353b2f6b728755752bbbe23123063
 
 build:
-  number: 0
+  number: 1
   noarch: python
 
 
@@ -73,3 +73,4 @@ about:
 extra:
   recipe-maintainers:
     - carlodri
+    - davidbrochart
