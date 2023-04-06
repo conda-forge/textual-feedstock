@@ -1,5 +1,5 @@
 {% set name = "textual" %}
-{% set version = "0.17.1" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1745014ea6c32415533b5edfe47fdcd1c01125a3fe9ba4fefbdc73600bd156d1
+  sha256: 5cf2ccbb898fbaca0589c0fa99dccaee413145219398841958425e84fe9c04a7
 
 build:
   number: 0
@@ -26,10 +26,10 @@ outputs:
         - pip
       run:
         - python >=3.7,<4
-        - rich >12.6
-        - markdown-it-py >=2.1.0,<2.2
+        - rich >=13.3.3
+        - markdown-it-py >=2.2,<3
         - typing-extensions >=4.4,<4.5
-        - importlib-metadata >=4.11.3,<4.12
+        - importlib-metadata >=4.11.3
     test:
       imports:
         - textual
@@ -41,7 +41,6 @@ outputs:
 
   - name: {{ name }}-devtools
     build:
-      script: echo Nothing to do.
       noarch: python
       entry_points:
         - textual = textual.cli.cli:run
@@ -58,6 +57,10 @@ outputs:
         - msgpack-python >=1.0.3
         - mkdocs-exclude >=1.0.2,<1.1
     test:
+      imports:
+        - textual.app
+        - textual.reactive
+        - textual.widget
       commands:
         - textual --help
 
@@ -66,7 +69,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Textual is a TUI (Text User Interface) framework for Python inspired by modern web development.
+  summary: Modern Text User Interface framework.
   dev_url: https://github.com/Textualize/textual
   doc_url: https://textual.textualize.io/
 
