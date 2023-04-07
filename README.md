@@ -7,7 +7,7 @@ Home: https://github.com/Textualize/textual
 
 Package license: MIT
 
-Summary: Textual is a TUI (Text User Interface) framework for Python inspired by modern web development.
+Summary: Modern Text User Interface framework.
 
 Development: https://github.com/Textualize/textual
 
