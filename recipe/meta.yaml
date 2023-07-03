@@ -12,11 +12,6 @@ source:
 build:
   number: 0
   noarch: python
-
-
-outputs:
-  - name: {{ name }}
-    build:
       script: python -m pip install . --no-deps --no-build-isolation -vv
       noarch: python
     requirements:
@@ -33,45 +28,19 @@ outputs:
     test:
       imports:
         - textual
-        - textual.layouts
       commands:
         - pip check
       requires:
         - pip
-
-  - name: {{ name }}-devtools
-    build:
-      noarch: python
-      entry_points:
-        - textual = textual.cli.cli:run
-    requirements:
-      host:
-        - python >=3.7,<4
-        - poetry-core >=1.2.0
-        - pip
-      run:
-        - python >=3.7,<4
-        - {{ pin_subpackage('textual', exact=True) }}
-        - aiohttp >=3.8.1
-        - click >=8.1.2
-        - msgpack-python >=1.0.3
-        - mkdocs-exclude >=1.0.2,<1.1
-    test:
-      imports:
-        - textual.app
-        - textual.reactive
-        - textual.widget
-      commands:
-        - textual --help
 
 about:
   home: https://github.com/Textualize/textual
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Modern Text User Interface framework.
+  summary: Modern Text User Interface framework
   dev_url: https://github.com/Textualize/textual
-  doc_url: https://textual.textualize.io/
+  doc_url: https://textual.textualize.io
 
 extra:
   recipe-maintainers:
