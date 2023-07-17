@@ -7,11 +7,11 @@ Home: https://github.com/Textualize/textual
 
 Package license: MIT
 
-Summary: Modern Text User Interface framework.
+Summary: Modern Text User Interface framework
 
 Development: https://github.com/Textualize/textual
 
-Documentation: https://textual.textualize.io/
+Documentation: https://textual.textualize.io
 
 Current build status
 ====================
@@ -32,7 +32,6 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-textual-green.svg)](https://anaconda.org/conda-forge/textual) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/textual.svg)](https://anaconda.org/conda-forge/textual) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/textual.svg)](https://anaconda.org/conda-forge/textual) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/textual.svg)](https://anaconda.org/conda-forge/textual) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-textual--devtools-green.svg)](https://anaconda.org/conda-forge/textual-devtools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/textual-devtools.svg)](https://anaconda.org/conda-forge/textual-devtools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/textual-devtools.svg)](https://anaconda.org/conda-forge/textual-devtools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/textual-devtools.svg)](https://anaconda.org/conda-forge/textual-devtools) |
 
 Installing textual
 ==================
@@ -44,16 +43,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `textual, textual-devtools` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `textual` can be installed with `conda`:
 
 ```
-conda install textual textual-devtools
+conda install textual
 ```
 
 or with `mamba`:
 
 ```
-mamba install textual textual-devtools
+mamba install textual
 ```
 
 It is possible to list all of the versions of `textual` available on your platform with `conda`:
