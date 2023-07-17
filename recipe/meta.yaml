@@ -1,5 +1,5 @@
 {% set name = "textual" %}
-{% set version = "0.29.0" %}
+{% set version = "0.30.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7eb87b6d007dc9bd08e00e893b860ecb7a11ca815c8866db39fe17ec547e2fcf
+  sha256: bf7045a7e9b7dc3ac589c38ce86ac31aecf0e76e8c8ce09aee474316bc2e2c03
 
 build:
   number: 0
   noarch: python
   script: python -m pip install . --no-deps --no-build-isolation -vv
-  noarch: python
 requirements:
   host:
     - python >=3.7,<4
@@ -22,8 +21,8 @@ requirements:
   run:
     - python >=3.7,<4
     - rich >=13.3.3
-    - markdown-it-py >=2.1,<3
-    - typing-extensions >=4.4,<4.5
+    - markdown-it-py >=2.1.0
+    - typing-extensions >=4.4.0,<5.0.0
     - importlib-metadata >=4.11.3
 test:
   imports:
