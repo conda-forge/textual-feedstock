@@ -1,5 +1,5 @@
 {% set name = "textual" %}
-{% set version = "0.43.2" %}
+{% set version = "0.44.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7f4f84f1ae753aa39290659dc0bb0aab06abb7e37aa3041349c86940698c6b54
+  sha256: 7c0fb9b14b19d0e44e7349cd34bac51808b759fb53b323c256dc458f7be8958c
 
 build:
   number: 0
@@ -15,7 +15,7 @@ build:
   script: python -m pip install . --no-deps --no-build-isolation -vv
 requirements:
   host:
-    - python >=3.7,<4
+    - python >=3.8,<4
     - poetry-core >=1.2.0
     - pip
   run:
