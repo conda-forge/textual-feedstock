@@ -15,7 +15,7 @@ build:
   script: python -m pip install . --no-deps --no-build-isolation -vv
 requirements:
   host:
-    - python >=3.7,<4
+    - python >=3.8,<4
     - poetry-core >=1.2.0
     - pip
   run:
