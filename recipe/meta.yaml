@@ -1,5 +1,5 @@
 {% set name = "textual" %}
-{% set version = "0.47.1" %}
+{% set version = "0.48.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4b82e317884bb1092f693f474c319ceb068b5a0b128b121f1aa53a2d48b4b80c
+  sha256: de270ee8448bb9ee02e8705da9268605504a8d347c9c9d26d6b7a86baf6fd6a8
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
   run:
     - tree_sitter >=0.20.1,<0.21.0
     - tree_sitter_languages >=1.7.0
-    - python >=3.7,<4
+    - python >=3.8,<4
     - rich >=13.3.3
     - markdown-it-py >=2.1.0
     - typing-extensions >=4.4.0,<5.0.0
