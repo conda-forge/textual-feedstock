@@ -24,10 +24,9 @@ requirements:
     - markdown-it-py >=2.1.0
     - rich >=13.3.3
     - typing-extensions >=4.4.0,<5.0.0
-    - mkdocs-git-revision-date-localized-plugin >=1.2.5,<2.0.0
   run_constrained:
     - tree-sitter >=0.20.1,<0.21.0
-    - tree_sitter_languages >=1.7.0
+    - tree_sitter_languages =1.10.2
 
 test:
   imports:
