@@ -1,5 +1,5 @@
 {% set name = "textual" %}
-{% set version = "0.78.0" %}
+{% set version = "0.79.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/textual-{{ version }}.tar.gz
-  sha256: 421f508b0d41ea0b8ecf273bf83f0d19376667eb0a87f70575252395d90ab315
+  sha256: b5ae63ae11227c158da90e486e99a6db7ef198470219edaf8c200a999d27577a
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - poetry-core >=1.2.0
     - pip
   run:
+    - platformdirs >=4.2.2,<5.0.0
     - python >=3.8.1,<4.0.0
     - markdown-it-py >=2.1.0
     - rich >=13.3.3
