@@ -1,5 +1,5 @@
 {% set name = "textual" %}
-{% set version = "0.88.1" %}
+{% set version = "0.89.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/textual-{{ version }}.tar.gz
-  sha256: 9c56d953dc7d1a8ddf06acc910d9224027e02416551f92920e70f435bd28e062
+  sha256: 66befe80e2bca5a8c876cd8ceeaf01752267b6b1dc1d0f73071f1f1e15d90cc8
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ requirements:
     - rich >=13.3.3
     - typing-extensions >=4.4.0,<5.0.0
   run_constrained:
-    - tree-sitter >=0.20.1,<0.21.0
+    - tree_sitter >=0.23.0
     - tree_sitter_languages =1.10.2
 
 test:
