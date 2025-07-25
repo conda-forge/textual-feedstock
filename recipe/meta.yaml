@@ -30,7 +30,7 @@ requirements:
     - rich >=13.3.3
     - typing-extensions >=4.4.0,<5.0.0
   run_constrained:
-    - tree_sitter >=0.23.0
+    - tree_sitter >=0.25.0
     - tree_sitter_languages =1.10.2
 
 test:
