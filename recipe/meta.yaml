@@ -1,5 +1,5 @@
 {% set name = "textual" %}
-{% set version = "5.3.0" %}
+{% set version = "6.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/textual-{{ version }}.tar.gz
-  sha256: 1b6128b339adef2e298cc23ab4777180443240ece5c232f29b22960efd658d4d
+  sha256: cb8882e7601a80a130a96d01393bd4c6d1bffb7dc9f6a820eb6b526acf0bfe10
 
 build:
   noarch: python
