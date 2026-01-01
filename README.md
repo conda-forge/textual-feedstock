@@ -11,7 +11,7 @@ Summary: Modern Text User Interface framework
 
 Development: https://github.com/Textualize/textual
 
-Documentation: https://textual.textualize.io
+Documentation: https://textual.textualize.io/
 
 Current build status
 ====================
