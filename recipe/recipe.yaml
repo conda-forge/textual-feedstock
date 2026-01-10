@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: textual
-  version: "7.0.2"
+  version: "7.0.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/textual-${{ version }}.tar.gz
-  sha256: a2c6b42036e8dbde178536c997a82392f1ab73dac9518543f8ff7206eff881c5
+  sha256: e9206a33bcd9486650d3e954147cd94ef49170df09d9a6dfc349400a4b25772d
 
 build:
   number: 0
