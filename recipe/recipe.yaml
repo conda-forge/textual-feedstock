@@ -13,7 +13,7 @@ source:
   sha256: c730cba1e3d704e8f1ca915b6a3af01451e3bca380114baacf6abf87e9dac8b6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -33,7 +33,7 @@ requirements:
     - rich >=14.2.0
   run_constraints:
     - tree_sitter >=0.25.0
-    - tree_sitter_languages =1.10.2
+    - tree-sitter-language-pack >=0.13.0
 
 tests:
   - python:
