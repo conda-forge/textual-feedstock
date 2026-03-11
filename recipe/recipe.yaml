@@ -33,7 +33,7 @@ requirements:
     - rich >=14.2.0
   run_constraints:
     - tree_sitter >=0.25.0
-    - tree_sitter_languages =1.10.2
+    - tree-sitter-language-pack >=0.13.0
 
 tests:
   - python:
