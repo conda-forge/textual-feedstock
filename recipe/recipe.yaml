@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: textual
-  version: 8.2.4
+  version: 8.2.5
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/textual-${{ version }}.tar.gz
-  sha256: d4e2b2ddd7157191d00b228592b7c739ea080b7d792fd410f23ca75f05ea76c4
+  sha256: 6c894e65a879dadb4f6cf46ddcfedb0173ff7e0cb1fe605ff7b357a597bdbc90
 
 build:
   number: 0
@@ -28,7 +28,6 @@ requirements:
     - platformdirs >=3.6.0,<5
     - python >=${{ python_min }},<4.0.0
     - markdown-it-py >=2.1.0
-    - linkify-it-py >=1,<3
     - mdit-py-plugins
     - rich >=14.2.0
   run_constraints:
